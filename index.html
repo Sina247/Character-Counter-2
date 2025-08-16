@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Character Counter 2</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+		<div class="bg-white shadow-lg rounded-xl p-6 w-full max-w-3xl">
+			<h1 class="text-2xl font-bold mb-4 text-center">Character Counter 2</h1>
+
+			<textarea id="text-input" class="w-full h-40 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Type or paste your text here..."></textarea>
+
+			<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mt-4 text-center">
+				<div class="bg-blue-100 p-3 rounded-lg">
+					<p class="font-semibold">Characters</p>
+
+					<p id="char-count">0</p>
+				</div>
+
+				<div class="bg-green-100 p-3 rounded-lg">
+					<p class="font-semibold">Words</p>
+
+					<p id="word-count">0</p>
+				</div>
+
+				<div class="bg-yellow-100 p-3 rounded-lg">
+					<p class="font-semibold">Sentences</p>
+
+					<p id="sentence-count">0</p>
+				</div>
+
+				<div class="bg-purple-100 p-3 rounded-lg">
+					<p class="font-semibold">Paragraphs</p>
+
+					<p id="paragraph-count">0</p>
+				</div>
+
+				<div class="bg-red-100 p-3 rounded-lg">
+					<p class="font-semibold">Spaces</p>
+
+					<p id="space-count">0</p>
+				</div>
+
+				<div class="bg-pink-100 p-3 rounded-lg">
+					<p class="font-semibold">Punctuation</p>
+
+					<p id="punctuation-count">0</p>
+				</div>
+
+				<div class="bg-indigo-100 p-3 rounded-lg">
+					<p class="font-semibold">Numbers</p>
+
+					<p id="number-count">0</p>
+				</div>
+
+				<div class="bg-teal-100 p-3 rounded-lg">
+					<p class="font-semibold">Links/Emails</p>
+
+					<p id="link-count">0</p>
+				</div>
+
+				<div class="bg-orange-100 p-3 rounded-lg">
+					<p class="font-semibold">Uppercase</p>
+
+					<p id="upper-count">0</p>
+				</div>
+
+				<div class="bg-lime-100 p-3 rounded-lg">
+					<p class="font-semibold">Lowercase</p>
+
+					<p id="lower-count">0</p>
+				</div>
+
+				<div class="bg-gray-200 p-3 rounded-lg col-span-2 sm:col-span-3 md:col-span-5">
+					<p class="font-semibold">Readability</p>
+
+					<p id="readability">0</p>
+				</div>
+			</div>
+		</div>
+
+		<script src="main.js"></script>
+	</body>
+</html>
